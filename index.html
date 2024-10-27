@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast 🌞</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background"><img src="images/sunny.jpg" width="100%" height="50%"></div>
+
+    <div class="search">
+        <input type="text" id="location-input" placeholder="Search location..." spellcheck="false">
+        <button onclick="fetchWeather()"><img src="images/search.png"></button>
+    </div>
+
+    <div class="main-container">
+        <div class="weather-panel">
+            <div class="time">
+                <h1 id="time-display">12:55:33 <span>AM</span></h1>
+            </div>
+
+            <div class="weather-details">
+                <div class="icon-text">
+                    <div class="icon"><img src="images/humidity.png"></div>
+                    <div id="humidity" class="text">50% <br> Humidity</div>
+                </div>
+                <div class="icon-text">
+                    <div class="icon"><img src="images/wind.png"></div>
+                    <div id="wind" class="text">8 km/h <br> Wind</div>
+                </div>
+            </div>
+
+            <div class="selected-area">
+                <p>Selected Area...</p>
+                <div class="map-container" id="map">
+                </div>
+                <div class="location">
+                    <p id="location-name">Colombo, Sri Lanka</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-weather">
+            <div class="current-weather">
+                <div id="temperature" class="temperature">27°C</div>
+                <div id="weather-condition" class="weather-condition">
+                    <h2>Sunny Cloudy</h2>
+                </div>
+            </div>
+
+            <div class="forecast-container">
+                <h4>Weekly Forecast</h4><br>
+                <div class="forecast-cards" id="forecast-cards">
+                </div>
+            </div>
+            <br>
+            <div class="forecast-container2">
+                <h4>Weekly Forecast</h4><br>
+                <div class="forecast-cards2">
+                    Stay prepared for any weather with our intuitive weather app! <br>From real-time updates on current
+                    conditions to a 7-day forecast, our app provides accurate, up-to-the-minute details <br> tailored to your
+                    location. <br> Easily check temperatures, humidity, wind speed, and weather descriptions to plan your
+                    day, whether it’s sunny, rainy, or stormy. <br>Perfect for planning trips, outdoor events,
+                    or daily routines, our weather app is your reliable source for <br> all the weather information you need,
+                    anytime, anywhere!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
